@@ -1,0 +1,15 @@
+
+/**
+ * @doc button.md
+ * @section
+ */
+
+.eb-btn {
+    appearance: none;
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid gray;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+}
