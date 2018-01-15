@@ -8088,16 +8088,22 @@
    * [Link to Github's markdown guide](https://guides.github.com/features/mastering-markdown/)
    *
    * @example
-   * <button type="button" class="btn">Default</button>
-   * <button type="button" class="btn btn-primary">Primary</button>
-   * <button type="button" class="btn btn-success">Success</button>
-   * <button type="button" class="btn btn-info">Info</button>
-   * <button type="button" class="btn btn-warning">Warning</button>
-   * <button type="button" class="btn btn-danger">Danger</button>
-   * <button type="button" class="btn btn-link">Link</button>
-   * <br><br>
-   * <button type="button" class="btn btn-primary btn-outline">Primary</button>
-   * <button type="button" class="btn btn-danger btn-outline">Danger</button>
+   * <p>
+   *   <button type="button" class="btn btn-primary">Primary</button>
+   *   <button type="button" class="btn btn-success">Success</button>
+   *   <button type="button" class="btn btn-info">Info</button>
+   *   <button type="button" class="btn btn-warning">Warning</button>
+   *   <button type="button" class="btn btn-danger">Danger</button>
+   *   <button type="button" class="btn btn-default">Default</button>
+   *   <button type="button" class="btn btn-link">Link</button>
+   * </p>
+   * <p>
+   *   <button type="button" class="btn btn-outline btn-primary">Primary</button>
+   *   <button type="button" class="btn btn-outline btn-success">Success</button>
+   *   <button type="button" class="btn btn-outline btn-info">Info</button>
+   *   <button type="button" class="btn btn-outline btn-warning">Warning</button>
+   *   <button type="button" class="btn btn-outline btn-danger">Danger</button>
+   * </p>
    *
    * @section
    * @page Atoms
@@ -8110,13 +8116,31 @@
   .btn-primary.btn-outline {
     color: #337ab7; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(51, 122, 183, 0.05);
       color: #337ab7; }
+  
+  .btn-success.btn-outline {
+    color: #5cb85c; }
+    .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+      background-color: rgba(92, 184, 92, 0.05);
+      color: #5cb85c; }
+  
+  .btn-info.btn-outline {
+    color: #5bc0de; }
+    .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+      background-color: rgba(91, 192, 222, 0.05);
+      color: #5bc0de; }
+  
+  .btn-warning.btn-outline {
+    color: #f0ad4e; }
+    .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
+      background-color: rgba(240, 173, 78, 0.05);
+      color: #f0ad4e; }
   
   .btn-danger.btn-outline {
     color: #d9534f; }
     .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(217, 83, 79, 0.05);
       color: #d9534f; }
   
   /**
@@ -8212,28 +8236,40 @@ using the <code>@section</code> tag below. e.g. <code>@section Button</code>.</p
 <p>We can make description as many lines as we want. And use <strong>whatever</strong> <em>markdown</em> we want.</p>
 <p><a href="https://guides.github.com/features/mastering-markdown/">Link to Github&#39;s markdown guide</a></p></div>
 
-<livingcss-example><button type="button" class="btn">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button>
-<br><br>
-<button type="button" class="btn btn-primary btn-outline">Primary</button>
-<button type="button" class="btn btn-danger btn-outline">Danger</button></livingcss-example>
+<livingcss-example><p>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-link">Link</button>
+</p>
+<p>
+  <button type="button" class="btn btn-outline btn-primary">Primary</button>
+  <button type="button" class="btn btn-outline btn-success">Success</button>
+  <button type="button" class="btn btn-outline btn-info">Info</button>
+  <button type="button" class="btn btn-outline btn-warning">Warning</button>
+  <button type="button" class="btn btn-outline btn-danger">Danger</button>
+</p></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn&quot;&gt;Default&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-outline&quot;&gt;Primary&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-outline&quot;&gt;Danger&lt;/button&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;p&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-primary&quot;&gt;Primary&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-success&quot;&gt;Success&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-info&quot;&gt;Info&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-warning&quot;&gt;Warning&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;/p&gt;</code></pre>
 </div>
 
         </article>
