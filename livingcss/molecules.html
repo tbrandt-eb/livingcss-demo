@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="livingcss">
 <head>
-  <title>LivingCSS Style Guide</title>
+  <title>Britannica Style Guide</title>
 
   <!-- critical path css -->
   <style>
@@ -377,7 +377,14 @@
   
   </style>  <!-- /critical path css -->
 
+    <style>
+        html {
+            font-size: 14px !important;
+        }
+    </style>
+
   <!-- user styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
   <!-- /user styles -->
 
   <script src="https://cdn.jsdelivr.net/webcomponentsjs/0.7.24/webcomponents.min.js"></script>
@@ -8066,21 +8073,47 @@
   </div><dom-module id="styleguide-styles">
     <template>
       <style>
-      
-  /**
-   * @doc button.md
-   * @section
+      /**
+   * The description goes here
+   *
+   * We can make it as many lines as we want.
+   *
+   * @example
+   * <button type="button" class="btn">Default</button>
+   * <button type="button" class="btn btn-primary">Primary</button>
+   * <button type="button" class="btn btn-success">Success</button>
+   * <button type="button" class="btn btn-info">Info</button>
+   * <button type="button" class="btn btn-warning">Warning</button>
+   * <button type="button" class="btn btn-danger">Danger</button>
+   * <button type="button" class="btn btn-link">Link</button>
+   *
+   * @section Button
+   * @page Atoms
    */
-  
   .eb-btn {
-      appearance: none;
-      background-color: white;
-      border-radius: 0;
-      border: 1px solid gray;
-      color: black;
-      font-size: 16px;
-      padding: 10px 15px;
-  }
+    appearance: none;
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid gray;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px; }
+  
+  /**
+   * Description of the fancy molecule
+   *
+   * @example
+   * <div class="eb-molecule">
+   *   <button class="eb-btn">Button</button>
+   * </div>
+   *
+   * @section Fancy Molecule
+   * @page Molecules
+   */
+  .eb-molecule {
+    border: 1px dotted blue;
+    border-radius: 3px;
+    padding: 15px; }
   
   
       </style>
@@ -8134,22 +8167,34 @@
 
     <header class="livingcss__header">
       <div class="livingcss__header-title-container livingcss__inverse-text">
-        <h1 class="livingcss__container livingcss__header-title"><a href="">LivingCSS Style Guide</a></h1>
+        <h1 class="livingcss__container livingcss__header-title"><a href="atoms.html">Britannica Style Guide</a></h1>
       </div>
 
+      <div class="livingcss__main-nav-container">
+        <nav class="livingcss__container livingcss__main-nav">
+          <a class="livingcss__nav-link livingcss__nav-link--main " href="atoms.html">Atoms</a>
+          <a class="livingcss__nav-link livingcss__nav-link--main livingcss__nav-link--active" href="molecules.html">Molecules</a>
+        </nav>
+      </div>
+
+      <button class="livingcss__menu livingcss__inverse-text">☰ Menu</button>
     </header>
 
     <div class="livingcss__container livingcss__content">
 
       <main class="livingcss__main" role="main">
 
-        <article class="livingcss__article" id="buttons!">
-          <h1 class="livingcss__article-title">Buttons!</h1><div class="livingcss__section-description"></div>
+        <article class="livingcss__article" id="fancy-molecule">
+          <h1 class="livingcss__article-title">Fancy Molecule</h1><div class="livingcss__section-description"><p>Description of the fancy molecule</p></div>
 
-<livingcss-example><button class="eb-btn">Button</button></livingcss-example>
+<livingcss-example><div class="eb-molecule">
+  <button class="eb-btn">Button</button>
+</div></livingcss-example>
 
 <div class="livingcss__section-markup">
-  <pre class="livingcss__section-code"><code class="language-html">&lt;button class&#x3D;&quot;eb-btn&quot;&gt;Button&lt;/button&gt;</code></pre>
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;div class&#x3D;&quot;eb-molecule&quot;&gt;
+  &lt;button class&#x3D;&quot;eb-btn&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
         </article>
@@ -8158,7 +8203,7 @@
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
-          <a class="livingcss__nav-link" href="#buttons!">Buttons!</a>
+          <a class="livingcss__nav-link" href="#fancy-molecule">Fancy Molecule</a>
         </div>
       </nav>
 

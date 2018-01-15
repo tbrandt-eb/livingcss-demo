@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "./node_modules/.bin/gulp",
-    "start": "./node_modules/.bin/gulp connect:start",
-    "stop": "./node_modules/.bin/gulp connect:stop"
+    "watch": "./node_modules/.bin/gulp watch",
+    "css:dist": "./node_modules/.bin/gulp css:dist",
+    "guide:build": "./node_modules/.bin/gulp guide:build",
+    "guide:deploy": "git subtree push --prefix dist origin gh-pages",
+    "start": "./node_modules/.bin/gulp server:start",
+    "stop": "./node_modules/.bin/gulp server:stop"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.2.0",
     "gulp-livingcss": "^2.2.0",
     "gulp-sass": "^3.1.0",

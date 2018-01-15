@@ -1,0 +1,28 @@
+
+/**
+ * The description goes here
+ *
+ * We can make it as many lines as we want.
+ *
+ * @example
+ * <button type="button" class="btn">Default</button>
+ * <button type="button" class="btn btn-primary">Primary</button>
+ * <button type="button" class="btn btn-success">Success</button>
+ * <button type="button" class="btn btn-info">Info</button>
+ * <button type="button" class="btn btn-warning">Warning</button>
+ * <button type="button" class="btn btn-danger">Danger</button>
+ * <button type="button" class="btn btn-link">Link</button>
+ *
+ * @section Button
+ * @page Atoms
+ */
+
+.eb-btn {
+    appearance: none;
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid gray;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+}
