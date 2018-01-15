@@ -8,7 +8,7 @@
     "watch": "./node_modules/.bin/gulp watch",
     "css:dist": "./node_modules/.bin/gulp css:dist",
     "guide:build": "./node_modules/.bin/gulp guide:build",
-    "guide:deploy": "git subtree push --prefix dist origin gh-pages",
+    "guide:deploy": "git subtree push --prefix livingcss origin gh-pages",
     "start": "./node_modules/.bin/gulp server:start",
     "stop": "./node_modules/.bin/gulp server:stop"
   },
