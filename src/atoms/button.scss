@@ -1,8 +1,17 @@
 
 /**
- * The description goes here
+ * Button
  *
- * We can make it as many lines as we want.
+ * The first line is the section title, everything else is the description. You can also specify the section name
+ * using the `@section` tag below. e.g. `@section Button`.
+ *
+ * [Check out the LivingCSS documentation](https://github.com/straker/livingcss)
+ *
+ * #### This is an `<h4>` heading
+ *
+ * We can make description as many lines as we want. And use **whatever** *markdown* we want.
+ *
+ * [Link to Github's markdown guide](https://guides.github.com/features/mastering-markdown/)
  *
  * @example
  * <button type="button" class="btn">Default</button>
@@ -12,17 +21,44 @@
  * <button type="button" class="btn btn-warning">Warning</button>
  * <button type="button" class="btn btn-danger">Danger</button>
  * <button type="button" class="btn btn-link">Link</button>
+ * <br><br>
+ * <button type="button" class="btn btn-primary btn-outline">Primary</button>
+ * <button type="button" class="btn btn-danger btn-outline">Danger</button>
  *
- * @section Button
+ * @section
  * @page Atoms
  */
 
-.eb-btn {
-    appearance: none;
-    background-color: white;
-    border-radius: 0;
-    border: 1px solid gray;
-    color: black;
-    font-size: 16px;
-    padding: 10px 15px;
+@import "../variables";
+
+.btn.btn-outline {
+    background-color: transparent;
+
+    &:hover, &:focus, &:active {
+        outline: 0;
+    }
+}
+
+.btn-primary {
+
+    &.btn-outline {
+        color: $btn-primary-bg;
+
+        &:hover, &:focus, &:active {
+            background-color: rgba($btn-primary-color, 0.95);
+            color: $btn-primary-bg;
+        }
+    }
+}
+
+.btn-danger {
+
+    &.btn-outline {
+        color: $btn-danger-bg;
+
+        &:hover, &:focus, &:active {
+            background-color: rgba($btn-danger-color, 0.95);
+            color: $btn-danger-bg;
+        }
+    }
 }

@@ -8074,9 +8074,18 @@
     <template>
       <style>
       /**
-   * The description goes here
+   * Button
    *
-   * We can make it as many lines as we want.
+   * The first line is the section title, everything else is the description. You can also specify the section name
+   * using the `@section` tag below. e.g. `@section Button`.
+   *
+   * [Check out the LivingCSS documentation](https://github.com/straker/livingcss)
+   *
+   * #### This is an `<h4>` heading
+   *
+   * We can make description as many lines as we want. And use **whatever** *markdown* we want.
+   *
+   * [Link to Github's markdown guide](https://guides.github.com/features/mastering-markdown/)
    *
    * @example
    * <button type="button" class="btn">Default</button>
@@ -8086,18 +8095,29 @@
    * <button type="button" class="btn btn-warning">Warning</button>
    * <button type="button" class="btn btn-danger">Danger</button>
    * <button type="button" class="btn btn-link">Link</button>
+   * <br><br>
+   * <button type="button" class="btn btn-primary btn-outline">Primary</button>
+   * <button type="button" class="btn btn-danger btn-outline">Danger</button>
    *
-   * @section Button
+   * @section
    * @page Atoms
    */
-  .eb-btn {
-    appearance: none;
-    background-color: white;
-    border-radius: 0;
-    border: 1px solid gray;
-    color: black;
-    font-size: 16px;
-    padding: 10px 15px; }
+  .btn.btn-outline {
+    background-color: transparent; }
+    .btn.btn-outline:hover, .btn.btn-outline:focus, .btn.btn-outline:active {
+      outline: 0; }
+  
+  .btn-primary.btn-outline {
+    color: #337ab7; }
+    .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #337ab7; }
+  
+  .btn-danger.btn-outline {
+    color: #d9534f; }
+    .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #d9534f; }
   
   /**
    * Description of the fancy molecule
@@ -8185,8 +8205,12 @@
       <main class="livingcss__main" role="main">
 
         <article class="livingcss__article" id="button">
-          <h1 class="livingcss__article-title">Button</h1><div class="livingcss__section-description"><p>The description goes here</p>
-<p>We can make it as many lines as we want.</p></div>
+          <h1 class="livingcss__article-title">Button</h1><div class="livingcss__section-description"><p>The first line is the section title, everything else is the description. You can also specify the section name
+using the <code>@section</code> tag below. e.g. <code>@section Button</code>.</p>
+<p><a href="https://github.com/straker/livingcss">Check out the LivingCSS documentation</a></p>
+<h4 id="this-is-an-h4-heading">This is an <code>&lt;h4&gt;</code> heading</h4>
+<p>We can make description as many lines as we want. And use <strong>whatever</strong> <em>markdown</em> we want.</p>
+<p><a href="https://guides.github.com/features/mastering-markdown/">Link to Github&#39;s markdown guide</a></p></div>
 
 <livingcss-example><button type="button" class="btn">Default</button>
 <button type="button" class="btn btn-primary">Primary</button>
@@ -8194,7 +8218,10 @@
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button></livingcss-example>
+<button type="button" class="btn btn-link">Link</button>
+<br><br>
+<button type="button" class="btn btn-primary btn-outline">Primary</button>
+<button type="button" class="btn btn-danger btn-outline">Danger</button></livingcss-example>
 
 <div class="livingcss__section-markup">
   <pre class="livingcss__section-code"><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn&quot;&gt;Default&lt;/button&gt;
@@ -8203,7 +8230,10 @@
 &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
 &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
 &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code></pre>
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-outline&quot;&gt;Primary&lt;/button&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-outline&quot;&gt;Danger&lt;/button&gt;</code></pre>
 </div>
 
         </article>
