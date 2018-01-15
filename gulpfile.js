@@ -45,7 +45,7 @@ gulp.task('server:start', () => {
   connect.server({
     livereload: true,
     port: 1234,
-    root: 'livingcss',
+    root: 'docs',
   });
 });
 
