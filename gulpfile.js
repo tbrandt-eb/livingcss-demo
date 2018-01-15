@@ -18,7 +18,7 @@ gulp.task('guide:build', ['css:dist'], () => {
       },
       sortOrder: ['atoms', 'molecules', 'organisms', 'templates', 'pages'],
     }))
-    .pipe(gulp.dest('./livingcss'));
+    .pipe(gulp.dest('./docs'));
 });
 
 
